@@ -1,0 +1,249 @@
+﻿
+@{
+    ViewBag.Title = "TeacherPanel";
+}
+
+<div class="banner-area-wrapper">
+    <div class="banner-area text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h2>Teacher Panel</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="course-area pt-150 pb-150">
+    <div class="container">
+        <div>
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label>Search</label>
+                            <input class="form-control" id="searchTxt" name="Search" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Action</label>
+                            <div class="row">
+                                <div class="col-md-4 pr-0">
+                                    <button class="btn btn-primary form-control" type="button" id="searchBtn">Search</button>
+                                </div>
+                                <div class="col-md-4 pr-0">
+                                    <button class="btn btn-primary form-control" type="button" id="resetBtn">New Notice</button>
+                                </div>
+                                <div class="col-md-4 pr-0">
+                                    <button class="btn btn-primary form-control" type="button" id="newBtn">New Student</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div>
+                <table id="ProductsTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th class="course-title">Student Name</th>
+                            <th class="course-title">Registration Number</th>
+                            <th class="course-title">Mark Attendence</th>
+                            <th class="course-title">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nabeel Sajid</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Usman ALi</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shakeel</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Faraz Ali</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ALI</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ALI</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ALI</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ALI</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ALI</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ALI</td>
+                            <td>
+                                2016-cs-117
+                            </td>
+
+                            <td>
+                                <form>
+                                    <input type="radio" name="attendence" value="present" checked> Present<br>
+                                    <input type="radio" name="attendence" value="absent"> Absent<br>
+                                </form>
+                            </td>
+                            <td class="wrap-td">
+                                <button type="submit" class="default-btn" data-id="17">Edit</button>
+                                <button type="submit" class="default-btn" data-id="17">Delete</button>
+                                <button type="submit" class="default-btn" data-id="17">View Details</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+
+                    <button class="default-btn" data-pageNo="2">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

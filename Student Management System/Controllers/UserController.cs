@@ -21,5 +21,25 @@ namespace Student_Management_System.Controllers
         {
             return View();
         }
+        public ActionResult AdminPanel()
+        {
+            return View();
+
+        }
+        public ActionResult StudentPanel()
+        {
+            return View();
+
+        }
+        public ActionResult ParentPanel()
+        {
+            return View();
+
+        }
+        public ActionResult TeacherPanel()
+        {
+            return View();
+
+        }
     }
 }

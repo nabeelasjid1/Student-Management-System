@@ -360,6 +360,10 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Signup.cshtml" />
+    <Content Include="Views\User\AdminPanel.cshtml" />
+    <Content Include="Views\User\StudentPanel.cshtml" />
+    <Content Include="Views\User\ParentPanel.cshtml" />
+    <Content Include="Views\User\TeacherPanel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
