@@ -1,0 +1,115 @@
+﻿@model List<Notice>
+@{
+    ViewBag.Title = "StudentTable";
+}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<div>
+    <form method="post">
+        <div class="row">
+            <div class="col-md-8">
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4 pr-0">
+                            <button class="btn btn-primary form-control" type="button" id="newBtn">New Notice</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div id="tableContainer">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><h1>Notice Date</h1></th>
+                <th><h1>Description</h1></th>
+                <th><h1>Actions</h1></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var notice in Model)
+            {
+                <tr>
+                    <td>@notice.Date</td>
+                    <td>
+                        @notice.Description
+                    </td>
+                    <td class="wrap-td">
+                        <button class="editBtn btn-block" data-id="@notice.ID">Edit</button>
+                        <button class="deleteBtn btn-block" data-id="@notice.ID">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $("#newBtn").click(function () {
+        $.ajax({
+            url: "/Notic/Create",
+        })
+        .done(function (response) {
+            $("#actionContainer").html(response);
+            focusAction("actionContainer")
+        })
+        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("fail");
+        });
+    });
+
+    $(".editBtn").click(function () {
+        $.ajax({
+            url: "/Notic/Edit",
+            data: {
+                ID: $(this).attr("data-id")
+            }
+        })
+        .done(function (response) {
+            $("#actionContainer").html(response);
+            focusAction("actionContainer")
+        })
+        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("fail");
+        });
+    });
+
+    $(".deleteBtn").click(function () {
+
+        swal({
+            title: "Confirm?",
+            text: "Are you sure you want to delete this product?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+		.then((willDelete) => {
+		    if (willDelete) {
+		        $.ajax({
+		            type: 'POST',
+		            url: '@Url.Action("Delete", "Notic")',
+		            data: {
+		                ID: $(this).attr('data-id')
+		            }
+		        })
+				.done(function (response) {
+				    $("#tableContainer").html(response);
+
+				    swal("Record deleted Successfully.", {
+				        icon: "success",
+				    });
+				})
+				.fail(function (XMLHttpRequest, textStatus, errorThrown) {
+				    alert("FAIL");
+				});
+
+		    }
+		});
+    });
+</script>

@@ -1,0 +1,57 @@
+﻿@model Department
+@{
+    ViewBag.Title = "Edit";
+}
+<div class="login-area pt-150 pb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div class="login">
+                    <div class="login-form-container">
+                        <div class="login-text">
+                            <h2>Edit Department</h2>
+                            <span>Please enter valid detail bellow.</span>
+                        </div>
+                        <div class="login-form">
+
+                            <form id="editDepartment">
+                                <input name="Name" value="@Model.Name" placeholder="Name" />
+                                <input name="ID" value="@Model.ID" type="hidden" placeholder="ID" />
+                                <input name="Admin" value="@Model.Admin" placeholder="Added By" />
+
+                                <div class="button-box">
+                                    <button class="default-btn" id="updateBtn" type="button">Update</button>
+                                    <button class="default-btn" id="cancelBtn" type="button">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $("#updateBtn").click(function () {
+        $.ajax({
+            type: "POST",
+            url: "/Department/Edit",
+            data: $("#editDepartment").serialize()
+        })
+        .done(function (response) {
+            $("#tableContainer").html(response);
+            $("#actionContainer").html("")
+        })
+        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("fail");
+        });
+    });
+
+    $("#cancelBtn").click(function () {
+        $("#actionContainer").html("");
+        focusAction("tableContainer")
+    });
+</script>

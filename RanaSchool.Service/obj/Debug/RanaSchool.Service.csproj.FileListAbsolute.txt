@@ -1,0 +1,42 @@
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.csprojResolveAssemblyReference.cache
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.dll
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.pdb
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Database.dll
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Entities.dll
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.dll
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Database.pdb
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Entities.pdb
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.xml
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.dll
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.pdb
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.dll.config
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nabeel\Desktop\SE Project\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.dll.config
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.dll
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.pdb
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.dll
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Database.dll
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Entities.dll
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Database.pdb
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Entities.pdb
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.xml
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.csprojResolveAssemblyReference.cache
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.dll
+C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.pdb
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.dll.config
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.dll
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Service.pdb
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.dll
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Database.dll
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Entities.dll
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Database.pdb
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\RanaSchool.Entities.pdb
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.xml
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.csprojResolveAssemblyReference.cache
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.dll
+C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Service\obj\Debug\RanaSchool.Service.pdb

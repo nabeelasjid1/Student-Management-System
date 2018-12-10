@@ -1,0 +1,51 @@
+﻿@model Event
+@{
+    ViewBag.Title = "EventDetails";
+}
+<div class="banner-area-wrapper">
+    <div class="banner-area text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="banner-content-wrapper">
+                        <div class="banner-content">
+                            <h2>event details</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Area End -->
+<!-- Event Details Start -->
+<div class="event-details-area blog-area pt-150 pb-140">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="event-details">
+                    <div class="event-details-img">
+                        <img src="@Model.ImageURL" alt="event-details">
+                        <div class="event-date">
+                            <h3>@Model.Date.Day <span>@Model.Date.ToString("MMM")</span></h3>
+                        </div>
+                    </div>
+                    <div class="event-details-content">
+                        <h2>@Model.Name.ToUpper()</h2>
+                        <ul>
+                            <li><span>time : </span>9:30am - 4:45pm</li>
+                            <li><span>venue : </span>@Model.Venue</li>
+                        </ul>
+                        <p>@Model.Description</p>
+                    </div>
+                    <div class="reply-area">
+                        <form id="contact-form" action="mail.php" method="post">
+                            <button class="btn btn-primary form-control">Join Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Event Details End -->

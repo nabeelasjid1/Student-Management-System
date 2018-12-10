@@ -1,0 +1,172 @@
+﻿@model List<Student>
+@{
+    ViewBag.Title = "StudentTable";
+}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<div>
+    <form method="post">
+        <div class="row">
+            <div class="col-md-8">
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4 pr-0">
+                            <button class="btn btn-primary form-control" type="button" id="newBtn">New Student</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div id="tableContainer">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><h1>Student Name</h1></th>
+                <th><h1>Email</h1></th>
+                <th><h1>Actions</h1></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.Name</td>
+                    <td>
+                        @student.Email
+                    </td>
+                    <td class="wrap-td">
+                        <button class="editBtn btn-block" data-id="@student.ID">Edit</button>
+                        <button class="deleteBtn btn-block" data-id="@student.ID">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+@*<div id="tableContainer">
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Reg Number</td>
+                <td>Contact</td>
+                <td>Cnic</td>
+                <td>Email</td>
+                <td>Parent Name</td>
+                <td>Subjects</td>
+                <td>Teachers</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.Name</td>
+                    <td>@student.RegNumber</td>
+                    <td>@student.Contact</td>
+                    <td>@student.Cnic</td>
+                    <td>@student.Email</td>
+                    <td>@student.Parent</td>
+                    <td>Subjects</td>
+                    <td>Teachers</td>
+                    <td>
+                        <button class="editBtn" data-id="@student.ID">Edit</button>
+                        <button class="deleteBtn" data-id="@student.ID">Delete</button>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>*@
+
+<script>
+    $("#searchBtn").click(function () {
+        var searchValue = $("#searchTxt").val()
+        $.ajax({
+            url: "/Student/StudentTable",
+            data: {
+                search: searchValue,
+            }
+        })
+        .done(function (response) {
+            $("#tableContainer").html(response);
+        })
+        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("fail");
+        });
+    });
+
+
+    $("#newBtn").click(function () {
+        var searchValue = $("#searchTxt").val()
+        $.ajax({
+            url: "/Student/Create",
+        })
+        .done(function (response) {
+            $("#actionContainer").html(response);
+        })
+        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("fail");
+        });
+    });
+
+    $(".editBtn").click(function () {
+        var searchValue = $("#searchTxt").val()
+        $.ajax({
+            url: "/Student/Edit",
+            data: {
+                ID: $(this).attr("data-id")
+            }
+        })
+        .done(function (response) {
+            $("#actionContainer").html(response);
+        })
+        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("fail");
+        });
+    });
+
+    $(".deleteBtn").click(function () {
+
+        swal({
+            title: "Confirm?",
+            text: "Are you sure you want to delete this product?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+		.then((willDelete) => {
+		    if (willDelete) {
+		        $.ajax({
+		            type: 'POST',
+		            url: '@Url.Action("Delete", "Student")',
+		            data: {
+		                ID: $(this).attr('data-id')
+		            }
+		        })
+				.done(function (response) {
+				    $("#tableContainer").html(response);
+
+				    swal("Record deleted Successfully.", {
+				        icon: "success",
+				    });
+				})
+				.fail(function (XMLHttpRequest, textStatus, errorThrown) {
+				    alert("FAIL");
+				});
+
+		    }
+		});
+    });
+</script>

@@ -1,0 +1,91 @@
+﻿@model Student
+@{
+    ViewBag.Title = "Edit";
+}
+@*<form id="editStudent">
+
+    <input type="hidden" name="ID" value="@Model.ID"/>
+    <label>Name</label>
+    <input name="Name"value="@Model.Name" />
+    <br />
+
+    <label>CNIC Number</label>
+    <input name="Cnic" value="@Model.Cnic" />
+    <br />
+
+    <label>Email</label>
+    <input name="Email" value="@Model.Email" />
+    <br />
+
+    <label>Contact</label>
+    <input name="Contact" value="@Model.Contact"/>
+    <br />
+
+    <label>Parent</label>
+    <input name="Parent" value="@Model.Parent" />
+    <br />
+
+    <label>RegNumber</label>
+    <input name="RegNumber" value="@Model.RegNumber"/>
+    <br />
+
+    <button id="updateBtn" type="button">Update</button>
+</form>*@
+
+
+<div class="login-area pt-150 pb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div class="login">
+                    <div class="login-form-container">
+                        <div class="login-text">
+                            <h2>Edit Student</h2>
+                            <span>Please enter valid detail bellow.</span>
+                        </div>
+                        <div class="login-form">
+
+                            <form id="editStudent">
+                                <input name="Name" value="@Model.Name" placeholder="Name" />
+                                <input name="ID" value="@Model.ID" type="hidden" placeholder="ID" />
+                                <input name="Cnic" value="@Model.Cnic" placeholder="Cnic Number" />
+                                <input name="Email" value="@Model.Email" placeholder="Email" />
+                                <input name="Contact" value="@Model.Contact" placeholder="Contact" />
+                                <input name="Contact" value="@Model.Parent" placeholder="Contact" />
+                                <input name="Contact" value="@Model.RegNumber" placeholder="Contact" />
+                                <div class="button-box">
+                                    <button class="default-btn" id="updateBtn" type="button">Update</button>
+                                    <button class="default-btn" id="cancelBtn" type="button">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $("#updateBtn").click(function () {
+        $.ajax({
+            type: "POST",
+            url: "/Student/Edit",
+            data: $("#editStudent").serialize()
+        })
+        .done(function (response) {
+            $("#tableContainer").html(response);
+            $("#actionContainer").html("")
+        })
+        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("fail");
+        });
+    });
+
+    $("#cancelBtn").click(function () {
+        $("#actionContainer").html("");
+        focusAction("tableContainer")
+    });
+</script>

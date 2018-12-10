@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+
+<div class="login-area pt-150 pb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div class="login">
+                    <div class="login-form-container">
+                        <div class="login-text">
+                            <h2>Create Notice</h2>
+                            <span>Please Enter Following Details</span>
+                        </div>
+                        <div class="login-form">
+
+                            <form id="createNotic">
+                                <input name="Date" placeholder="Date of Display" type="datetime"/>
+                                <input name="Description" placeholder="Description" />
+                                <div class="button-box">
+                                    <button class="default-btn" id="saveBtn" type="button">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#saveBtn").click(function () {
+        $.ajax({
+            type: "POST",
+            url: "/Notic/Create",
+            data: $("#createNotic").serialize()
+        })
+        .done(function (response) {
+            $("#tableContainer").html(response);
+            $("#actionContainer").html("");
+            focusAction("tableContainer")
+        })
+        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("fail");
+        });
+    });
+</script>

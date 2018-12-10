@@ -1,0 +1,13 @@
+﻿@model RanaSchool.Entities.Teacher
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete Teacher</h2>
+<h1>Are You Sure U want to delete this Teacher</h1>
+<form method="post">
+    <input name="ID" value="@Model.ID" type="hidden" />
+    <button type="submit">Yes Delete</button>
+</form>
+<a href="/Index">Cancel</a>
+

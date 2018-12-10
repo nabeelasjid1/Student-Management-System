@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<section class="notice-area pt-150 pb-150">
+    <div class="container">
+        <div id="tableContainer">
+            @{
+                Html.RenderAction("StudentTable");
+            }
+        </div>
+
+        <div id="actionContainer">
+
+        </div>
+    </div>
+</section>
