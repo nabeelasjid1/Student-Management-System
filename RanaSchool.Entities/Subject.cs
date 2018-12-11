@@ -15,7 +15,7 @@ namespace RanaSchool.Entities
         public string CreditHours { get; set; }
         public string MaximumCapacity { get; set; }
         public string ImageURL { get; set; }
-        public virtual Department Department { get; set; }
+        public Department Department { get; set; }
         public Teacher Teacher { get; set; }
         public Student Student { get; set; }
         public List<Student> Students { get; set; }

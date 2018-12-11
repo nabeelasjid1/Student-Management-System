@@ -11,8 +11,5 @@ namespace RanaSchool.Entities
         public List<Student> Students { get; set; }
         public Teacher Teacher { get; set; }
         public Student Student { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public string ConfirmPassword { get; set; }
     }
 }

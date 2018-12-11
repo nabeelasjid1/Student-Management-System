@@ -211,25 +211,32 @@
             </div>
         </div>
         <div class="row">
+            @{ 
+                var eventCount = Model.Event.Count();
+                var i = 0;
+            }
+            
             <div class="col-md-6 col-sm-12 col-xs-12">
-
-                <div class="single-event mb-35">
-                    <div class="event-date">
-                        <h3><a href="@Url.Action("EventDetails", "Event")">20 <span>June</span></a></h3>
-                    </div>
-                    <div class="event-content text-left">
-                        <div class="event-content-left">
-                            <h4><a href="@Url.Action("EventDetails", "Event")">MICRO BIOLOGICAL WORKSHOP</a></h4>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                            </ul>
+                @while (i <= 3)
+                {
+                    <div class="single-event mb-35">
+                        <div class="event-date">
+                            <h3><a href="@Url.Action("EventDetails", "Event")">20 <span>June</span></a></h3>
                         </div>
-                        <div class="event-content-right">
-                            <a class="default-btn" href="@Url.Action("EventDetails", "Event")">join now</a>
+                        <div class="event-content text-left">
+                            <div class="event-content-left">
+                                <h4><a href="@Url.Action("EventDetails", "Event")">MICRO BIOLOGICAL WORKSHOP</a></h4>
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
+                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
+                                </ul>
+                            </div>
+                            <div class="event-content-right">
+                                <a class="default-btn" href="@Url.Action("EventDetails", "Event")">join now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
             </div>
             <div class="col-md-6 hidden-sm hidden-xs">
                 <div class="single-event mb-35">

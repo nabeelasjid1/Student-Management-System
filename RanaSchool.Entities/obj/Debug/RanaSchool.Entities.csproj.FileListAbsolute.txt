@@ -8,8 +8,3 @@ C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Entities\bin\Debug\RanaSc
 C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Entities\obj\Debug\RanaSchool.Entities.csprojResolveAssemblyReference.cache
 C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Entities\obj\Debug\RanaSchool.Entities.dll
 C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Entities\obj\Debug\RanaSchool.Entities.pdb
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Entities\bin\Debug\RanaSchool.Entities.dll
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Entities\bin\Debug\RanaSchool.Entities.pdb
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Entities\obj\Debug\RanaSchool.Entities.csprojResolveAssemblyReference.cache
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Entities\obj\Debug\RanaSchool.Entities.dll
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Entities\obj\Debug\RanaSchool.Entities.pdb

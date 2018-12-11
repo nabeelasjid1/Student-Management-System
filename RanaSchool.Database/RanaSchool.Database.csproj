@@ -77,18 +77,6 @@
     <Compile Include="Migrations\201812021523545_eventIMGAdded.Designer.cs">
       <DependentUpon>201812021523545_eventIMGAdded.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812051713186_AddUserRoleInAspNetUser.cs" />
-    <Compile Include="Migrations\201812051713186_AddUserRoleInAspNetUser.Designer.cs">
-      <DependentUpon>201812051713186_AddUserRoleInAspNetUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812061655029_ini.cs" />
-    <Compile Include="Migrations\201812061655029_ini.Designer.cs">
-      <DependentUpon>201812061655029_ini.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812061730570_addusernameindb.cs" />
-    <Compile Include="Migrations\201812061730570_addusernameindb.Designer.cs">
-      <DependentUpon>201812061730570_addusernameindb.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RSContext.cs" />
@@ -126,15 +114,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812021523545_eventIMGAdded.resx">
       <DependentUpon>201812021523545_eventIMGAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812051713186_AddUserRoleInAspNetUser.resx">
-      <DependentUpon>201812051713186_AddUserRoleInAspNetUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812061655029_ini.resx">
-      <DependentUpon>201812061655029_ini.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812061730570_addusernameindb.resx">
-      <DependentUpon>201812061730570_addusernameindb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

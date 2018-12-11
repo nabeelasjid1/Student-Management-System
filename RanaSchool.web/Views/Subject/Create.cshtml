@@ -1,4 +1,4 @@
-﻿@model List<Department>
+﻿
 @{
     ViewBag.Title = "Create";
 }
@@ -16,12 +16,6 @@
 
                             <form id="createSubject">
                                 <input name="Name" placeholder="Name" />
-                                <select placeholder="Select a Department" name="DepartmentID">
-                                    @foreach (var department in Model)
-                                    {
-                                        <option value="@department.ID">@department.Name</option>
-                                    }
-                                </select>
                                 <input name="Description" placeholder="Description" />
                                 <input name="About" placeholder="About" />
                                 <input name="CreditHours" placeholder="CreditHours" />

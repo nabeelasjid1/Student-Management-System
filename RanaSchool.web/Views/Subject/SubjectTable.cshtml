@@ -28,7 +28,6 @@
         <thead>
             <tr>
                 <th><h1>Subject Name</h1></th>
-                <th><h1>Department</h1></th>
                 <th><h1>Credithours</h1></th>
                 <th><h1>Actions</h1></th>
             </tr>
@@ -38,16 +37,6 @@
             {
                 <tr>
                     <td>@subject.Name</td>
-                    <td>
-                        @if (subject.Department != null)
-                        {
-                            <text>@subject.Department.Name</text>
-                        }
-                        else
-                        {
-                            <text>-</text>
-                        }
-                    </td>
                     <td>
                         @subject.CreditHours
                     </td>

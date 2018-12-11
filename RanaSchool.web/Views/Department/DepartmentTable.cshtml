@@ -15,20 +15,6 @@
                         <div class="col-md-4 pr-0">
                             <button class="btn btn-primary form-control" type="button" id="newBtn">New Department</button>
                         </div>
-                        <div class="col-md-4 pr-0">
-                            <button class="btn btn-primary form-control" type="button" id="newBtn"><a href="@Url.Action("Index", "Teacher")">New Teacher</a></button>                        </div>
-                        <div class="col-md-4 pr-0">
-                            <button class="btn btn-primary form-control" type="button" id="newBtn">New Student</button>
-                        </div>
-                        <div class="col-md-4 pr-0">
-                            <button class="btn btn-primary form-control" type="button" id="newBtn">New Parent</button>
-                        </div>
-                        <div class="col-md-4 pr-0">
-                            <button class="btn btn-primary form-control" type="button" id="newBtn">New Event</button>
-                        </div>
-                        <div class="col-md-4 pr-0">
-                            <button class="btn btn-primary form-control" type="button" id="newBtn">New Notice</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -42,8 +28,7 @@
         <thead>
             <tr>
                 <th><h1>Department Name</h1></th>
-                <th><h1>Subjects</h1></th>
-                <th><h1>Teachers</h1></th>
+                <th><h1>Email</h1></th>
                 <th><h1>Actions</h1></th>
             </tr>
         </thead>
@@ -52,16 +37,6 @@
             {
                 <tr>
                     <td>@department.Name</td>
-                    <td>
-                        @if(department.Subjects != null)
-                        {
-                            <text>@department.Subjects.Count()</text>
-                        }
-                        else
-                        {
-                            <text>0</text>
-}
-                    </td>
                     <td>
                         23
                         @*@department.Teachers.Count()*@

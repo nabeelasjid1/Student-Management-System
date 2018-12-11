@@ -1,6 +1,4 @@
 ﻿@model Subject
-using Microsoft.AspNet.Identity;
-using System.Security.Claims;
 @{
     ViewBag.Title = "CoursesDetails";
 }
@@ -61,7 +59,7 @@ using System.Security.Claims;
                 </div>
                 <div class="reply-area">
                     <form id="contact-form" action="mail.php" method="post">
-                        <button id="register" class="btn btn-primary form-control" type="button">Register Now</button>
+                        <button class="btn btn-primary form-control">Register Now</button>
                         <p class="form-messege"></p>
                     </form>
                 </div>
@@ -70,27 +68,3 @@ using System.Security.Claims;
     </div>
 </div>
 <!-- Blog End -->
-<script>
-    $("#register").click(function () {
-        $.ajax({
-            url: '@Url.Action("RegisterSubject", "Subject")',
-            data: {
-                ID: '@Model.ID'
-            }
-        })
-        .done(function (response) {
-            if (response.Success)
-            {
-                swal("Done", "Your Order has been placed.", "success")
-
-            }
-            else {
-                swal("Failed", "Unable to place order", "warning");
-
-            }
-        })
-        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
-            alert("FAIL");
-        });
-    });
-</script>

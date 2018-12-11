@@ -53,12 +53,5 @@ namespace RanaSchool.Service
                 context.SaveChanges();
             }
         }
-        public void AddSubject(Subject subject)
-        {
-            using (var context = new RSContext())
-            {
-                var sub = new Subject();
-            }
-        }
     }
 }

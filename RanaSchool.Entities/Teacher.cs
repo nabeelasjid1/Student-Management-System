@@ -15,9 +15,6 @@ namespace RanaSchool.Entities
         public string Degree { get; set; }
         public string About { get; set; }
         public string Designation { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public string ConfirmPassword { get; set; }
         public Department Department { get; set; }
         public List<Parent> Parents { get; set; }
         public List<Student> Students { get; set; }

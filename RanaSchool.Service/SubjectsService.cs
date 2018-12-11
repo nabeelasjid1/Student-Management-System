@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 
 namespace RanaSchool.Service
 {
@@ -15,7 +14,7 @@ namespace RanaSchool.Service
         {
             using (var context = new RSContext())
             {
-                return context.Subjects.Include(x=> x.Department).ToList();
+                return context.Subjects.ToList();
             }
         }
 
@@ -32,8 +31,6 @@ namespace RanaSchool.Service
         {
             using (var context = new RSContext())
             {
-                context.Entry(subject.Department).State = System.Data.Entity.EntityState.Unchanged;
-
                 context.Subjects.Add(subject);
                 context.SaveChanges();
             }
@@ -50,16 +47,9 @@ namespace RanaSchool.Service
         {
             using (var context = new RSContext())
             {
+                //context.Entry(teacher).State = System.Data.Entity.EntityState.Deleted;
                 var subject = context.Subjects.Find(ID);
                 context.Subjects.Remove(subject);
-                context.SaveChanges();
-            }
-        }
-        public void AddStudent(Student student)
-        {
-            using (var context = new RSContext())
-            {
-                context.Students.Add(student);
                 context.SaveChanges();
             }
         }

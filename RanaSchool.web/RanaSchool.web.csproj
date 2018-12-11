@@ -205,39 +205,19 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NoticController.cs" />
     <Compile Include="Controllers\ParentController.cs" />
-    <Compile Include="Controllers\ParentPanelController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
-    <Compile Include="Controllers\StudentPanelController.cs" />
     <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
-    <Compile Include="Controllers\TeacherPanelController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811181315189_InitialCreate.cs" />
-    <Compile Include="Migrations\201811181315189_InitialCreate.Designer.cs">
-      <DependentUpon>201811181315189_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812051719332_Initialmodel.cs" />
-    <Compile Include="Migrations\201812051719332_Initialmodel.Designer.cs">
-      <DependentUpon>201812051719332_Initialmodel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812051739244_empty.cs" />
-    <Compile Include="Migrations\201812051739244_empty.Designer.cs">
-      <DependentUpon>201812051739244_empty.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\DepartmentModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="ViewModels\DepartmentViewModels.cs" />
     <Compile Include="ViewModels\HomeViewModels.cs" />
-    <Compile Include="ViewModels\StudentViewModels.cs" />
-    <Compile Include="ViewModels\SubjectViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -339,11 +319,6 @@
     <Content Include="Views\Event\Edit.cshtml" />
     <Content Include="Views\CEvent\Index.cshtml" />
     <Content Include="Views\CEvent\EventDetials.cshtml" />
-    <Content Include="Views\Depart\Index.cshtml" />
-    <Content Include="Views\StudentPanel\Index.cshtml" />
-    <Content Include="Views\TeacherPanel\Index.cshtml" />
-    <Content Include="Views\ParentPanel\Index.cshtml" />
-    <Content Include="Views\Subject\RegisterSubject.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -362,10 +337,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RanaSchool.Database\RanaSchool.Database.csproj">
-      <Project>{D55B758F-90E6-4FBC-85D8-FD0D6C6D19DC}</Project>
-      <Name>RanaSchool.Database</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RanaSchool.Entities\RanaSchool.Entities.csproj">
       <Project>{F1234806-3A2F-4EBC-88BD-B001DDA8FCAD}</Project>
       <Name>RanaSchool.Entities</Name>
@@ -377,17 +348,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811181315189_InitialCreate.resx">
-      <DependentUpon>201811181315189_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812051719332_Initialmodel.resx">
-      <DependentUpon>201812051719332_Initialmodel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812051739244_empty.resx">
-      <DependentUpon>201812051739244_empty.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -33,26 +33,3 @@ C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Database\obj\Debug\RanaSc
 C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.subjectAdded.resources
 C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.eventAdded.resources
 C:\Users\Nabeel\Desktop\Lab work\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.eventIMGAdded.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\RanaSchool.Database.dll.config
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\RanaSchool.Database.dll
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\RanaSchool.Database.pdb
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\EntityFramework.dll
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\RanaSchool.Entities.dll
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\RanaSchool.Entities.pdb
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\EntityFramework.xml
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.csprojResolveAssemblyReference.cache
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.initialized.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.AllTeacherPropertiesAdded.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.imageurl.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.NoticeAdded.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.subjectAdded.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.eventAdded.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.eventIMGAdded.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.csproj.GenerateResource.Cache
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.dll
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.pdb
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.AddUserRoleInAspNetUser.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.ini.resources
-C:\Users\Nabeel\Desktop\Lab work\day7 error\RanaSchool\RanaSchool.Database\obj\Debug\RanaSchool.Database.Migrations.addusernameindb.resources
